@@ -18,7 +18,7 @@ const Form = () => {
         terms: ""
     });
 
-    const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+    const [isButtonDisabled, setIsButtonDisabled] = useState(true); 
 
     const formSchema = yup.object().shape({
         name: yup.string().required("Name is a required field!"),
@@ -52,7 +52,7 @@ const Form = () => {
         })
     };
 
-    const [post, setPost] = useState([])
+    const [post, setPost] = useState([]) 
 
     const formSubmit = event => {
         event.preventDefault();
